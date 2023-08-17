@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="text-editor.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4b53cf44c7.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body class="container mx-auto px-10">
+    <header class=" bg-sky-200 mt-10 py-5">
+        <h1 class="text-center font-semibold text-3xl">My Text Editor</h1>
+        <div class="bg-sky-100 mx-20  my-5 border-2 px-5 border-black pb-3">
+
+            <div class="flex justify-between items-center py-3">
+                <div class="grid grid-flow-col gap-5">
+                    <i id="btn-bold" class="fa-solid fa-b cursor-pointer"></i>
+                    <i id="btn-italic" class="fa-solid fa-italic cursor-pointer"></i>
+                    <i id="btn-underline" class="fa-solid fa-underline cursor-pointer"></i>
+                </div>
+                <div class="grid grid-flow-col gap-5">
+                    <i id="text-left" class="fa-solid fa-align-left cursor-pointer"></i>
+                    <i id="text-center" class="fa-solid fa-align-center cursor-pointer"></i>
+                    <i id="text-right" class="fa-solid fa-align-right cursor-pointer" ></i>
+                    <i id="text-justify" class="fa-solid fa-align-justify cursor-pointer"></i>
+                </div>
+                <div class="grid grid-flow-col gap-5">
+
+                    <input id="text-size" class="w-10 bg-sky-100" type="number" name="">
+                    <span id="text-uppercase" class="cursor-pointer">aA</span>
+                    <input type="color" name="" id="">
+                </div>
+            </div>
+            <hr class="border border-black mb-5">
+            
+            <div class="flex justify-center">
+                <textarea id="text-field" name="" cols="150" rows="20"></textarea>
+            </div>
+        </div>
+    </header>
+
+    <script src="text-editor.js"></script>
+</body>
+</html>
